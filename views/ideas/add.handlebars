@@ -1,0 +1,12 @@
+    {{#each errors}}
+        <div class="form-new-idea__error-message">{{text}}</div>
+    {{else}}
+    {{/each}}
+<div>
+    <h3 class="heading heading--bordered">New Idea</h3>
+    <form class="form-new-idea" action="/ideas" method="post">
+        <input class="form-new-idea__input" name="title" type="text" placeholder="Title ..." required>
+        <textarea class="form-new-idea__textarea" name="detail" cols="30" rows="8" placeholder="Here's the details ..." required></textarea>
+        <input class="button button__centered" type="submit" value="add">
+    </form>
+</div>

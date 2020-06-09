@@ -1,0 +1,31 @@
+    {{#each errors}}
+        <div class="form-new-idea__error-message">{{text}}</div>
+    {{else}}
+    {{/each}}
+<div>
+    <h3 class="heading heading--centered">Edit Idea</h3>
+
+    <form 
+        class="form-new-idea" 
+        action="/ideas/{{idea.id}}?_method=PUT" 
+        method="post">
+
+        <input type="hidden" name="_method" value="PUT">
+
+        <input 
+            class="form-new-idea__input" 
+            name="title" 
+            type="text" 
+            value="{{idea.title}}" 
+            placeholder="Editing Title ..." required />
+        <textarea 
+            class="form-new-idea__textarea" 
+            name="detail" 
+            type="text"
+            cols="30" rows="8" 
+            placeholder="Editing details ..." 
+            required>{{idea.detail}}</textarea>
+
+        <input class="button" type="submit" value="submit">
+    </form>
+</div>

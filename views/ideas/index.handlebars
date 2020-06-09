@@ -1,0 +1,28 @@
+<div class="grid">
+
+    {{#each ideas}}
+
+        <div class="grid-box">
+            <div class="fetched-idea">
+                <h3 class="heading heading--fixed">{{title}}</h3>
+                <div class="fetched-idea__body">
+                    <p class="paragraph paragraph--b-margin">{{detail}}</p>
+                </div>
+            </div>
+
+            <div class="label">edit</div>
+
+            <div class="editable">
+                <a class="button button__edit button__edit--small button__edit--m-right" href="/ideas/edit/{{id}}">Edit</a>
+                <form method="post" action="/ideas/{{id}}?_method=DELETE">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input class="button button__delete button__delete--small" type="submit" value="Delete">
+                </form>
+            </div>
+        </div>
+
+    {{else}}
+        <div class="heading">No ideas available</div>
+    {{/each}}
+
+</div>

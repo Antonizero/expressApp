@@ -1,0 +1,52 @@
+
+
+.button {
+    text-shadow: 1px 1px 1px #111;
+    box-sizing: border-box;
+    color: #bfbfbf;
+    font-size: 1.2rem;
+    font-family: 'BebasNeue';
+    outline: none;
+    background-image: linear-gradient(#555,#222);
+    border: 2px solid #222;
+    cursor:pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__centered {
+        width: 30%;
+        margin: 10px auto 0 auto;
+    }
+    &__edit {
+        text-decoration: none;
+        color: white;
+        flex: 1;
+        border: none;
+        &--small {
+            max-width: 120px;
+            font-size: .8rem;
+            padding: 2px;
+        }
+        &--small:hover {
+            border:1px solid dodgerblue;
+        }
+        &--m-right {
+            margin-right: 10px;
+        }
+    }
+    // edit the form for delete button
+    &__delete {
+        text-decoration: none;
+        color: white;
+        flex: 1;
+        border: none;
+        &--small {
+            font-size: .8rem;
+            padding: 2px;
+        }
+        &--small:hover {
+            border: 1px solid  rgb(194, 2, 2);
+        }
+    }
+}

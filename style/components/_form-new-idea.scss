@@ -1,0 +1,50 @@
+.form-new-idea {
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #777;
+    color: #bfbfbf;
+    &__error-message {
+        font-family: 'BebasNeue';
+        color: white;
+        background-image: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(255, 0, 0, .1));
+        padding-left: 5px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    &__title {
+        font-family: 'BebasNeue';
+        color: white;
+        background-color: #333;
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    &__input {
+        color: #bfbfbf;
+        background-color: #333;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: 'Roboto';
+        border-top: none;
+        border-bottom: 2px solid #777;
+        border-right: none;
+        border-left: none;
+        outline: none;
+        padding: 10px;
+    }
+    &__textarea {
+        color: #bfbfbf;
+        background-color: #333;
+        font-size: 1.2rem;
+        font-family: 'Roboto';
+        font-weight: 100;
+        border: none;
+        outline: none;
+        height: 100%;
+        padding: 10px;
+        resize: none;
+    }
+}
